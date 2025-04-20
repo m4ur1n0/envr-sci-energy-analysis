@@ -1,7 +1,9 @@
 import BodyParagraphs from "@/components/BodyParagraphs";
 import ChartsCarousel from "@/components/ChartsCarousel";
+import Copyright from "@/components/Copyright";
 import DataTables from "@/components/DataTables";
 import FigureCaption from "@/components/FigureCaption";
+import SourcesCited from "@/components/SourcesCited";
 
 
 export default function Home() {
@@ -10,9 +12,9 @@ export default function Home() {
   return (
     <div className="whole-page-div w-screen h-screen flex items-start justify-center max-w-[100vw]">
       <div className="report-margins-and-container flex flex-col w-[60%] mt-10">
-        <h1 className=" ">Environmental Science Project 2</h1>
-        <p className="text-gray-500 mb-10">An analytical overview of developments in the energy sector, 1980-2023.</p>
-        <p className="text-gray-400 mb-10">THEO MAURINO • APR, 2025</p>
+        <h1 className="text-pretty">Analytical overview of developments in energy usage and production, 1980-2023.</h1>
+        <p className="text-gray-500 mb-10">Environmental Science Project 2</p>
+        <p className="text-gray-400 mb-10">THEO MAURINO  •  APR, <span className='text-[1.2rem];'>2025</span></p>
 
         <ChartsCarousel />
 
@@ -21,6 +23,10 @@ export default function Home() {
         <BodyParagraphs />
 
         <DataTables />
+
+        <SourcesCited />
+
+        <Copyright />
 
       </div>
     </div>
