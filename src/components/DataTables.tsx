@@ -2,9 +2,9 @@
 import React, { useState } from 'react'
 import { Button } from './ui/button';
 
-type Props = {}
 
-const DataTables = (props: Props) => {
+
+const DataTables = () => {
     const [tableState, setTableState] = useState<"production" | "area" | "usage">("production");
 
   return (

@@ -1,10 +1,7 @@
 // components/LineChart.tsx
 'use client';
 import { Chart } from 'react-google-charts';
-import { useEffect, useState } from 'react';
-import { loadAndParseCSV } from '@/lib/csvLoader';
-import { ChartData, LineChartProps, ChartOptions } from '@/types/chartTypes';
-import Papa from 'papaparse';
+import { LineChartProps, ChartOptions } from '@/types/chartTypes';
 
 export default function LineChart({
   chartData,
