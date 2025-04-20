@@ -1,103 +1,72 @@
-import Image from "next/image";
+import BodyParagraphs from "@/components/BodyParagraphs";
+import ChartsCarousel from "@/components/ChartsCarousel";
+import DataTables from "@/components/DataTables";
+import FigureCaption from "@/components/FigureCaption";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+  return (
+    <div className="whole-page-div w-screen h-screen flex items-start justify-center max-w-[100vw]">
+      <div className="report-margins-and-container flex flex-col w-[60%] mt-10">
+        <h1 className=" ">Environmental Science Project 2</h1>
+        <p className="text-gray-500 mb-10">An analytical overview of developments in the energy sector, 1980-2023.</p>
+        <p className="text-gray-400 mb-10">THEO MAURINO • APR, 2025</p>
+
+        <ChartsCarousel />
+
+        <FigureCaption />
+
+        <BodyParagraphs />
+
+        <DataTables />
+
+      </div>
     </div>
+
+    
   );
 }
+
+/**
+ *       <p  className="indent-[6%] text-[0.85rem]">
+      Over the 43-year period of 1980-2023, U.S. energy production and consumption have undergone notable shifts in both source composition and efficiency. In the two decades preceding the 21st century, renewable energy sources like biomass, solar, and wind were completely unused, or were used so negligibly as to not warrant measurement. In this 20-year span, coal, natural gases, and petroleum dominated the energy mix. While the 21st century saw consistency in these factors regarding natural gas and petroleum, coal as an energy source has dropped significantly in absolute value of quads produced per year (hovering around 20 quads in the 80s and 90s, and halving by the 2020s). By the 2010s and 2020s, the landscape began to shift: as coal declined, we saw significant growth in wind and solar, rising from nearly zero in 2010 to 0.89 quads of solar energy and 1.5 quads of wind energy by 2023. Biomass maintained a modest but steady presence, while nuclear and hydro remained relatively stable. On the consumption side, total energy use peaked around 2010 and has since fluctuated slightly, with increased efficiency evident in the growing proportion of useful energy. We’re watching production from renewable energy rise gradually, but we still need significant improvements if we hope to offset our carbon emissions as a nation.
+      </p>
+
+      <p>To toggle particular lines, select specific key in legend.</p>
+
+
+      <div className="energy-prod-graph-div w-full flex flex-col items-center justify-center">
+        <LineChart
+        csvPath="/data/production_by_type_us.csv"
+        title="Energy Production by Source"
+        height={700}
+        width={1000}
+        legendPosition="right"
+        />
+
+      </div>
+
+      <div className="energy-use-graphs-div w-full flex flex-col items-center justify-between gap-2">
+        <LineChart
+          csvPath="/data/use_by_type_us.csv"
+          title="Energy Use by Type"
+          height={500}
+          width={1000}
+          legendPosition="right"
+        />
+
+        <p className="indent-[6%] text-[0.85rem]">
+        With knowledge of recent history, it is fascinating to look at certain measurements. A primary example is the use of energy for transportation, which took a significant dip in 2020, as a result of remote work during the COVID-19 pandemic. I personally recall the decrease gas prices took in 2019-2021 as a result of lower usage rates. In 2021 and 2022, respectively, the New York-based Indian Point Unit 3 nuclear reactor, and the Michigan-based Palisades reactor were both retired, explaining the significant dip we see in nuclear power generation in the early 2020s. In 2021, likewise Excelon retired the Byron and Dresden nuclear plants based in Illinois. A guess here is that these plants were retired for economic reasons. The relative decrease in GDP as a result of the COVID-19 pandemic may have inspired a desire for cheaper forms of energy production. Coal might be the most dramatic change in energy production sources over the time period I measured. We can see that from 1995 to 2023, energy produced by coal dropped more than 10 quads (almost 50% of its peak in 1995). This could be for several reasons: growing competition from other sources like natural gas (which demonstrates a level of growth nearly parallel to coal’s decrease in the same time period), or an increase in environmental regulations regarding coal-based energy production.
+        </p>
+
+        <LineChart
+          csvPath="/data/rejected_used_and_total_energy_us.csv"
+          title="Energy Waste and Use"
+          height={500}
+          width={1000}
+        />
+      </div>
+
+ */

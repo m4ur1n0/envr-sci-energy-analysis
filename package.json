@@ -1,5 +1,5 @@
 {
-  "name": "envr-science-report",
+  "name": "envr-sci-proj-2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^0.501.0",
+    "next": "15.3.1",
+    "papaparse": "^5.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-google-charts": "^5.2.1",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/papaparse": "^5.3.15",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
