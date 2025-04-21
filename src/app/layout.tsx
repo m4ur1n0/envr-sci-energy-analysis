@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/vectors/favicon.svg" />
+      </head>
       <body>
         {children}
       </body>
